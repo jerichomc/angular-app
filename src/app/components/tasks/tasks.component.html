@@ -1,0 +1,4 @@
+<!-- <app-task-item>@for (task in tasks; track task.text){
+    <p>{{task.text}}</p>}
+</app-task-item> -->
+<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
